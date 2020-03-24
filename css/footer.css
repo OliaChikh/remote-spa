@@ -1,0 +1,73 @@
+.footerSpa {
+	background-color: #fff9f8;
+	padding: 7% 0% 3%;
+	color: #555;
+	font-family: 'Roboto', sans-serif;
+}
+
+.footerLogo {
+	line-height: 100px;
+	height: 100px;
+	width: 100%;
+}
+
+.footerLogo .logoImg {
+	display: block;
+	width: 108px;
+	height: 100px;
+	margin: 0 auto;
+}
+
+.footerNetworks {
+	height: auto;
+	width: 100%;
+	display: flex;
+	justify-content: center;
+}
+
+.networkF {
+	background: url(/images/icons/icons8-facebook-40.png);
+	width: 35px;
+	height: 35px;
+}
+
+.networkI {
+	background: url(/images/icons/icons8-pinterest-40.png);
+	width: 35px;
+	height: 35px;
+}
+
+.networkP {
+	background: url(/images/icons/icons8-instagram-40.png);
+	width: 35px;
+	height: 35px;
+}
+
+.networkF:hover {
+	background: url(/images/icons/icons8-facebook-40Col.png);
+
+}
+
+.networkI:hover {
+	background: url(/images/icons/icons8-pinterest-40Col.png);
+}
+
+.networkP:hover {
+	background: url(/images/icons/icons8-instagram-40Col.png);
+}
+
+.socialIcon:hover {
+	transition: 0.5s;
+}
+
+.copyrightSpa {
+	height: 50px;
+	line-height: 50px;
+	padding-bottom: 2%;
+}
+
+.copyrightText {
+	display: flex;
+	justify-content: center;
+	/*	padding-bottom: 2%;*/
+}

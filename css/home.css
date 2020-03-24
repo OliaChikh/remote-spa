@@ -1,0 +1,530 @@
+.bannerMain {
+	background: url(/images/leaf.png);
+	background-repeat: no-repeat;
+	background-size: 10%;
+	background-position: left center;
+	position: relative;
+}
+
+.spaImg {
+	position: absolute;
+	top: -160px;
+	right: 0;
+	width: 42%;
+	z-index: -1;
+}
+
+.bannerText {
+	width: 60%;
+	z-index: 1;
+	padding-bottom: 50px;
+}
+
+
+.bannerText span {
+	color: #ff817e;
+	display: block;
+	font-family: "Rufina", serif;
+	letter-spacing: 1.5px;
+	text-transform: uppercase;
+	margin-bottom: 20px;
+}
+
+.bannerText h2 {
+	font-size: 60px;
+	margin-bottom: 25px;
+	font-weight: 700;
+}
+
+.bannerText p {
+	color: #555;
+	margin-bottom: 20px;
+	font-family: 'Roboto', sans-serif;
+}
+
+.playar {
+	padding-left: 50px;
+}
+
+.battonPlay {
+	text-decoration: none;
+	position: relative;
+}
+
+.battonPlay::before {
+	background: url(/images/icons/play.png);
+	content: '';
+	display: block;
+	height: 40px;
+	width: 40px;
+	position: absolute;
+	top: -12px;
+	left: -50px;
+}
+
+.aboutMain {
+	margin-top: 70px;
+}
+
+.imgRose {
+	display: flex;
+	justify-content: center;
+
+}
+
+.imgRose h2 {
+	padding-top: 3%;
+
+}
+
+.mainText {
+	width: 100%;
+	text-align: center;
+}
+
+.serviceBox {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+
+.serviceBoxSingle {
+	width: 24.5%;
+	height: auto;
+	position: relative;
+	display: inline-block;
+}
+
+/*
+.serviceBoxImg {
+	height: inherit;
+	transition: .5s ease;
+
+}
+
+.middle {
+
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.serviceBoxSingle:hover .middle{
+	opacity: 1;
+}
+*/
+
+.overlayinn {
+	background-color: rgba(255,129,126, 0.7);
+	height: 100%;
+	width: 100%;
+	opacity: 0;
+	top: 0;
+	left: 0;
+	position: absolute;
+	/*  padding: 70px;*/
+}
+
+.overlayinn:hover {
+	opacity: 1;
+	transition: opacity .5s;
+}
+
+.overlayinn:hover span {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	text-align: center;
+	
+
+}
+.overlayinn span::before{
+	content: '';
+	display: block;
+	height: 42px;
+	width: 47px;
+	position: absolute;
+	background: url(/images/icons/1.png);
+	left: 25px;
+	top: -45px;
+}
+
+
+
+
+
+/*page service*/
+
+
+.procedure .bannerText{
+	width: 80%;
+	margin: 0 auto;
+	
+}
+.procedure .bannerText h2, .procedure .bannerText p{
+	display: flex;
+	justify-content: center;
+}
+.procedureBoxes{
+	display: flex;
+	justify-content: space-between;
+	margin-bottom: 3%;
+}
+.procedureBoxe{
+	width: 30%;
+	border: 1px solid #e3e6ea;
+	text-align: center;
+	padding: 2%;
+}
+/*.procedureBoxeConteiner{
+	width: 96%;
+	margin: 0 auto;
+}*/
+
+.procedureBoxeImg{
+	height: auto;
+	margin-bottom: 10%;
+}
+.procedureBoxeTitle{
+	color: #263a41;
+	font-size: 22px;
+	font-family: 'Rufina', serif;
+	font-weight: 700;
+	margin-bottom: 10%;
+	height: 60px;
+	
+}
+.procedureBoxeDesccription{
+	color: #555;
+	font-family: 'Robot', sans-serif;
+	margin-bottom: 10%;
+	height: 100px;
+}
+
+.procedureBoxeButton{
+	background-color: #30383b;
+	border-radius: 50px;
+	color: #fff;
+	font-size: 16px;
+	font-weight: 600;
+	min-width: 160px;
+	height: 40px;
+}
+
+.procedureBoxe:hover{
+	box-shadow: 0 5px 20px #f0f0f0;
+	transform: scale(1.01);
+	transition: 0.6s;
+}
+.procedureBoxeButton:hover{
+	background-color: #ff817e;
+	transition: 0.5s;
+	outline: none;
+}
+
+/*procedureRecord*/
+
+.procedureRecord{
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	background-color: #fff9f8;
+}
+.recordImg{
+	height: auto;
+	width: 40%;
+}
+
+.dataClient{
+	width: 60%;
+	display: inline-table;
+	padding-top: 10px;
+}
+.formField{
+	width: 90%;
+	margin: auto;
+	display: flex;
+	justify-content: space-between;
+}
+
+.dataInputClient{
+	width: 48%;
+	background-color: transparent;
+	border: none;
+	border-bottom: 1px solid #d4d3d3;
+	color: #999;
+	font-size: 14px;
+	font-weight: 400;
+	margin-bottom: 20px;
+	padding-top: 10px;
+	overflow: visible;
+	text-transform: uppercase;
+}
+.dataInputClient:focus, #comment:focus{
+	outline: none;
+}
+.dataInputClient:hover, #comment:hover{
+	cursor: pointer;
+}
+.formField .procedureBoxeButton{
+	height: 50px;
+}
+/*js time
+
+var timepicker = new TimePicker('time', {
+  lang: 'en',
+  theme: 'dark'
+});
+
+var input = document.getElementById('time');
+
+timepicker.on('change', function(evt) {
+  
+  var value = (evt.hour || '00') + ':' + (evt.minute || '00');
+  evt.element.value = value;
+
+});
+
+*/
+
+#comment{
+	width: 100%;
+	height: auto;
+	background-color: transparent;
+	border: none;
+	border-bottom: 1px solid #d4d3d3;
+	color: #999;
+	font-size: 14px;
+	font-weight: 400;
+	margin-bottom: 20px;
+	padding-top: 10px;
+	overflow: visible;
+}
+
+
+
+/*contact*/
+
+.LeospaContact .bannerText{
+	width: 80%;
+	margin: auto;
+}
+.LeospaContact .bannerText h2, .LeospaContact .bannerText p{
+	display: flex;
+	justify-content: center;
+}
+
+.connection{
+	display: flex;
+	justify-content: space-between;
+	padding-bottom: 5%;
+}
+.contactBox{
+	color: #555;
+	margin-bottom: 20px;
+	font-family: 'Roboto', sans-serif;
+	display: block;
+	width: 30%;
+	padding-top: 20px;
+	font-size: 14px;
+}
+.contactAddress, .contactPhone, .contactMail{
+	position: relative;
+	padding-left: 30px;
+}
+.contactAddress:before{
+	content: "";
+	background: url(/images/icons/icons8-map-marker-30.png);
+	position: absolute;
+	top: 0px;
+	left: -5px;
+	width: 30px;
+	height: 30px;
+	
+}
+.contactMail:before{
+	content: "";
+	background: url(/images/icons/icons8-secured-letter-30.png);
+	position: absolute;
+	top: 0px;
+	left: -5px;
+	width: 30px;
+	height: 30px;
+	
+	}
+.contactPhone:before{
+	content: "";
+	background: url(/images/icons/icons8-ringing-phone-30.png);
+	position: absolute;
+	top: 0;
+	left: -5px;
+	width: 30px;
+	height: 30px;
+}
+.contactAddress:hover:before{
+	content: "";
+	top: 0;
+	left: -5px;
+	background: url(/images/icons/icons8-map-marker-30Col.png);
+}
+.contactMail:hover:before{
+	content: "";
+	top: 0;
+	left: -5px;
+	background: url(/images/icons/icons8-secured-letter-30Col.png);
+}
+.contactPhone:hover:before{
+	content: "";
+	top: 0;
+	left: -5px;
+	background: url(/images/icons/icons8-ringing-phone-30Col.png);
+}
+
+.earth{
+	width: 350px;
+	height: 350px;
+	background: url(/images/earth.jpg);
+	background-color: antiquewhite;
+	border-radius: 50%;
+	margin: 0 auto;
+	background-size: cover;
+	animation-name: pinkEarth;
+	animation-duration: 10s;
+	animation-timing-function: linear;
+	animation-iteration-count: 0;
+	box-shadow: inset -7px 5px 30px 2px rgb(245, 32, 45, 0.5);
+}
+/*#e6b5be*/
+.earth:hover{
+	animation-iteration-count: infinite;
+}
+@keyframes pinkEarth {
+	0%{
+		background-position: 0 0
+	}
+	100%{
+		background-position:  100% 0;
+
+	}
+}
+
+
+
+/*media screen*/
+
+@media screen and (max-width:992px){
+	.bannerText h2{
+		font-size: 40px;
+	}
+
+	.formField .procedureBoxeButton{
+		height: 45px;
+	}
+	.recordImg img{
+		min-height: 262px;
+	}
+}
+@media screen and (max-width:768px){
+	.bannerText h2{
+		font-size: 30px;
+	}
+	.earth{
+		width: 300px;
+		height: 300px;
+	}
+	.procedureBoxeButton{
+		font-size: 14px;
+		font-weight: 400;
+		min-width: 140px;
+	}
+	.formField .procedureBoxeButton{
+		height: 40px;
+	}
+	.recordImg img{
+		min-height: 252px;
+	}
+	.procedureBoxeTitle{
+		font-size: 18px;
+		height: 40px;
+	}
+	.procedureBoxeDesccription{
+		font-size: 14px;
+	}
+	.procedureBoxe form .procedureBoxeButton{
+		font-size: 14px;
+		font-weight: 300;
+		height: 30px;
+	}
+}
+@media screen and (max-width:600px){
+	.logo .logoImg{
+		width: 70%;
+		background-size: contain;
+	}
+	.menu .menuUl{
+		width: 90%;
+	}
+	.menuUl li a {
+		font-size: 16px;
+	}
+	.bannerText h2{
+		font-size: 25px;
+	}
+	.bannerText{
+		padding-bottom: 0px;
+	}
+	.container .footerLogo .logoImg{
+		background-size:contain;
+		width: 80px;
+	}
+	.procedureBoxes{
+		width: 70%;
+		margin: 3% auto;
+		display: block;
+	}
+	.procedureBoxe{
+		width: 100%;
+		margin-bottom: 3%;
+	}
+	.procedureBoxeTitle{
+		margin-bottom: 0;
+	}
+	.procedureBoxeDesccription{
+		margin-bottom: 0;
+		height: 70px;
+	}
+	.recordImg{
+		display: none;
+	}
+	.dataClient{
+		width: 100%;
+	}
+	.connection{
+		display: block;
+	}
+	.contactBox{
+		width: 90%;
+		display: block;
+		padding-left: 5%;
+	}
+	.earth {
+		width: 250px;
+		height: 250px;
+	}
+	.formField{
+		display: grid;
+		justify-content: center;
+	}
+	.dataInputClient{
+		width: 100%;
+	}
+}
+/*
+@media screen and(max-width: 480px){}
+@media screen and(max-width: 320px){}
+*/
+
